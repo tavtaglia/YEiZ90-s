@@ -1,3 +1,7 @@
+/* index.css or App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+/* Now you can use the Poppins font in your React project */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +15,390 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container-position-absoloute {
+  position: absolute;
+}
+
+.gray-list {
+  background-color: #555F61;
+  height: 33px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  margin: 0;
+  margin-top: -30px;
+}
+
+.text1 {
+  font-size: xxx-large;
+  font-weight: 600;
+  color: #555F61;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'poppins', sans-serif !important;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.text2 {
+  font-size: 5;
+  color: #555F61;
+  text-align: center;
+  font-family: 'poppins', sans-serif !important;
+}
+
+.text3 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #555F61;
+  text-align:left ;
+  font-family: 'poppins', sans-serif !important;
+  padding-left:55px;
+  padding-top: -15px;
+}
+
+.text4 {
+  font-size: 15px;
+  color: #555F61;
+  text-align: left ;
+  font-family: 'poppins', sans-serif !important;
+  padding-left:60px;
+  padding-top: 15px;
+  line-height: 1.5;
+  height: 175px;
+  width: 60%;
+}
+
+.inputs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-content: center;
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 550px;
+  height: 55px;
+  background: #FFFFFF;
+  margin-top: -10px;
+}
+
+.input input {
+  height: 45px;
+  width: 400px;
+  align-content: center;
+  place-items: center;
+  background: transparent;
+  outline: #555F61;
+  font-size: 17px;
+  font-family: 'poppins', sans-serif !important;
+  padding: 8px;
+}
+
+.submit {
+  font-family: 'poppins', sans-serif !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 400px;
+  height: 55px;
+  border: 2px solid #555F61;
+  color: #555F61;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s; /* Optional: for smooth transition on hover */
+}
+
+.submit:hover {
+  background-color: #555F61; 
+  color:#FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.submit-container {
+  margin-top: 20px;
+}
+
+.nav-item {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'poppins', sans-serif !important;
+  color: black;
+  padding-left: 50;
+  margin-left: 25px;
+}
+
+.fs-8{
+  font-family: 'poppins', sans-serif !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #555F61;
+}
+
+.fs-2 {
+  color: #555F61;
+}
+
+.bg-yeiz {
+  background-color: rgba(17, 81, 94, 0.15);
+}
+
+.p-order {
+  margin-left: 45px;
+  margin-top: -100px;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 55px;
+  padding-right: 15px;
+  margin: 0;
+}
+
+.line-separator {
+  height: 2.5px;
+  background-color: #555F61;
+  margin: 40px;
+  border-radius: 5px;
+}
+
+.best-selling-products-background {
+  background-color: rgba(17, 81, 94, 0.15);
+  margin: 55px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.bs {
+  font-family: 'poppins', sans-serif !important;
+  font-size: 28px;
+  font-weight: bold;
+  color: #555F61;
+}
+
+.p1 {
+  font-family: 'poppins', sans-serif !important;
+  font-size: 20px;
+  font-weight: bold;
+  color: #555F61;
+  margin-top: 20px;
+}
+
+.p2 {
+font-family: 'poppins', sans-serif !important;
+font-size: 15px;
+color: #555F61;
+margin-top: 20px;
+}
+
+.p3 {
+  font-family: 'poppins', sans-serif !important;
+  font-size: 15px;
+  color: #555F61;
+}
+
+.bscard {
+  box-sizing: border-box;
+  width: 35%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(17, 81, 94, 0.15);
+  margin: 10px;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, lfr);
+  overflow-x: auto;
+  width: 100%;
+  gap: 14px;
+}
+
+.col-md-6 {
+  grid-column: span 2;
+}
+
+.image-container {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 80%;
+  height: 80%;
+}
+
+.text-container {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: 'poppins', sans-serif !important;
+  margin-bottom: 5px;
+}
+
+.text-container p {
+  margin-bottom: 10px;
+  font-family: 'poppins', sans-serif !important;
+  color: #555F61;
+  font-size: 10px;
+}
+
+.tab {
+  margin-top: -120px;
+}
+
+.tab ul {
+  list-style-type: none;
+  margin-left: 90px;
+  margin-top: 10px ;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.semi-bold-text {
+  font-weight: 500;
+}
+
+.tab ul li {
+  display: inline;
+  color: #555F61;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  font-size: large;
+}
+
+.tab ul li:hover {
+  color: #555F61;
+  cursor: pointer;
+  text-decoration: underline 1.5px;
+
+}
+
+.nav-item {
+  display: inline;
+  color: #555F61;
+  border-bottom: 2px solid transparent; 
+  transition: border-bottom 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #555F61;
+  cursor: pointer;
+  border-bottom-color: #555F61;
+}
+
+.flex-fill {
+  font-family: 'poppins', sans-serif !important;
+  font-size: 40px;
+  color: #555F61;
+  margin-left: -130px;
+}
+
+.content {
+  display: none;
+}
+
+.title {
+  font-family: 'poppins', sans-serif !important;
+  font-size: 35px;
+  color: #555F61;
+}
+
+.show-content {
+  display: inline;
+}
+
+.custom-table {
+  --table-header-bg: rgba(17, 81, 94, 0.15);;
+  --table-header-color: #555F61;
+  --table-row-color: #555F61;
+  font-family: 'poppins', sans-serif !important;
+}
+
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.table-container table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.client-column {
+  padding-left: 30px; /* Add extra space for the first column */
+  text-align: center;
+}
+
+.id-column {
+  padding-left: 21px;
+  text-align: center;
+}
+
+.date-column {
+  padding-left: 45px;
+  text-align:left;
+}
+
+.income-column {
+  margin-left: 10px;
+  text-align:left;
+}
+
+.status-column {
+  margin-left: -20px;
+  text-align: center;
+  color: black;
+}
+
+.status-column {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.status-packing {
+  background-color: rgba(85, 95, 97, 0.3);
+  border-radius: 5px;
+}
+
+.status-completed {
+  background-color: rgba(17, 81, 94, 0.2);
+  border-radius: 5px;
+}
+
+.status-cancelled {
+  background-color:rgba(213, 61, 61, 0.4);
+  border-radius: 5px;
+}
+
+.details-column a {
+  color: rgba(85, 95, 97, 1);
+}
+

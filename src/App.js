@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import logo from './components/yeiz.png';
 import './App.css';
+import Login from './components/login/login';
+import Dashboard from './pages/Dashboard';
+import Order from './pages/Order'
+import Catalog from './pages/Catalog';
+import { data } from '../App';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Dashboard />
+      <Order/>
+      <Catalog/>
     </div>
   );
-}
+};
+
+
+
 
 export default App;
